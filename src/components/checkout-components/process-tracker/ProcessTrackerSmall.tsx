@@ -580,7 +580,7 @@ const ProcessTrackerSmall: React.FC<Props> = ({ page }) => {
             group-data-[progress]:tw-text-gray-01 group-data-[progress]:tw-font-bold
            m_12051f6c mantine-Stepper-stepLabel"
             >
-              Payment
+              Review
             </span>
           </span>
         </button>
