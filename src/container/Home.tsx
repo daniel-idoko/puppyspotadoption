@@ -124,7 +124,7 @@ const HomeContainer: React.FC<Props> = ({}) => {
 
                         <div className="hero-module__searchbarWrapper--Z0IvD order-3 mt-[30px] max-w-[clamp(0px,calc(100vw_-_20px),1070px)]">
                             <div className="style-module__wrapper--7jJ94 style-module__open--k2jZl style-module__wrapper--home-hero--jYIia  unbxd_homepage_inputSize" data-cy="hero-searchbar">
-                                <link rel="preload" as="image" type="image/svg+xml" href="https://www.puppyspot.com/preact/./img/dots-loader.svg"/>
+                                <link rel="preload" as="image" type="image/svg+xml" href="/img/dots-loader.svg"/>
                                 
                                 <div className="style-module__content--UlhVY style-module__noBorder--b9CgM style-module__content--home-hero--VItrJ">
                                     <div className="style-module__reducerWrapper--UVMF-">
@@ -175,16 +175,18 @@ const HomeContainer: React.FC<Props> = ({}) => {
 
                 </div>
 
+
+
                 <div className="w-full flex items-center justify-center  h-[65px] overflow-hidden bg-transparent pb-4 relative track_trustpilot">
                     <div className="trustpilot-module__wrapper--rTgiM">
                         <a className="trustpilot-module__linkDiv--sTp39 470small" href="https://www.trustpilot.com/review/puppyspot.com" target="_blank" rel="noreferrer">
-                        <div className="trustpilot-module__item--GouFp flex">
-                            <img className="h-8 trustpilot-module__trustImage--JcJz0" src="https://www.puppyspot.com/preact/./img/trustpilot-white.svg" height="35" />
-                        </div>
-                        <div className="trustpilot-module__item--GouFp flex trustpilot-module__starsImage--7b3Fe">
-                            <img className="h-8 trustpilot-module__starsImage--7b3Fe" src="https://www.puppyspot.com/preact/./img/stars-4.5.svg" height="35" />
-                        </div>
-                        <span className="trustpilot-module__item--GouFp font-nunito text-white"><b>5,500+</b> reviews</span>
+                            <div className="trustpilot-module__item--GouFp flex">
+                                <img className="h-8 trustpilot-module__trustImage--JcJz0" src="/img/trustpilot-white.svg" height="35" />
+                            </div>
+                            <div className="trustpilot-module__item--GouFp flex trustpilot-module__starsImage--7b3Fe">
+                                <img className="h-8 trustpilot-module__starsImage--7b3Fe" src="/img/stars-4.5.svg" height="35" />
+                            </div>
+                            <span className="trustpilot-module__item--GouFp font-nunito text-white"><b>5,500+</b> reviews</span>
                         </a>
                     </div>
                 </div>
