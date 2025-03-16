@@ -655,3 +655,13 @@ hr {
     display: none !important;
   }
 }
+
+
+.text-underlined {
+    font-family: Nunito, sans-serif !important;
+    text-decoration: underline !important;
+    text-underline-offset: 5px !important;
+    font-weight: 700 !important;
+    transition: color .15sease !important;
+    color: #333 !important;
+}

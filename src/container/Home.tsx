@@ -93,49 +93,63 @@ const HomeContainer: React.FC<Props> = ({}) => {
     <div>
 {/* Hero Section */}
         <div className="relative">
-            <div className="heroBg"></div>
+            {/* <div className="heroBg"></div> */}
+            <div className="heroVideo">
+                <video autoPlay={true} muted={true} loop={true} playsInline={true}>
+                    <source src="https://cdn.buttercms.com/OBoCndz5SP23zXL3J7nX" type="video/mp4"/>
+                </video>
+            </div>
+
             <div id="root-hero">
                 <div className="hero-module__hero--fxGmC">
 
 
                     <div className="hero-module__heroContent--x5Q7B">
-                        <h1 className="hero-module__heroTitle--pRQaT order-1">The Perfect Puppy People</h1>
+                        <h1 className="hero-module__heroTitle--pRQaT order-1">Where puppy love begins</h1>
                         <h2 className="hero-module__heroSubtitle--i-cGv order-2">America’s leading puppy adoption service</h2>
 
-                        <div className="mt-[20px] button-order ml-[10px] mr-[10px]">
+{/* 
+                        <div className="mt-[20px] search-order ml-[10px] mr-[10px]">
                             <a
                             className="button-module__wrapper--jJ7g9 button-module__contained--zXwYo track_browse_all_home hero-module__heroCta--8TpOf"
                             href={pages.PUPPIES_FOR_SELL}
                             >Browse All Puppies</a>
 
+                        </div> */}
+
+                        <div className="mt-[20px] search-order ml-[10px] mr-[10px]">
+                            <a className="button-module__wrapper--jJ7g9 button-module__outlined--dnOJw  track_browse_all_home hero-module__heroCta--8TpOf hero-module__heroCta--white--Lu3AQ" href={pages.PUPPIES_FOR_SELL}>Browse all puppies </a>
                         </div>
 
-                        <div className="hero-module__searchbarWrapper--Z0IvD search-order max-w-[clamp(0px,calc(100vw_-_20px),1070px)]">
-                            <div className="style-module__wrapper--7jJ94 style-module__open--k2jZl" data-cy="hero-searchbar">
-                            <div className="style-module__content--UlhVY style-module__noBorder--b9CgM">
 
-                                <div className="style-module__reducerWrapper--UVMF-">
-                                    <div className="style-module__reducer--higDU">
-                                        <form autoComplete="off" className="style-module__controlWrapper--Cak4k" action="." >
-                                        <input
-                                            type="search"
-                                            name="search"
-                                            className="style-module__input--8Dj0T"
-                                            placeholder="Search for Breeds"
-                                            autoComplete="off"
-                                            onChange={(e)=> handleSearch(e)}
-                                            onFocus={() => setIsFocused(true)}
-                                            onBlur={() => setIsFocused(false)}
-                                        />
-                                        </form>
+                        <div className="hero-module__searchbarWrapper--Z0IvD order-3 mt-[30px] max-w-[clamp(0px,calc(100vw_-_20px),1070px)]">
+                            <div className="style-module__wrapper--7jJ94 style-module__open--k2jZl style-module__wrapper--home-hero--jYIia  unbxd_homepage_inputSize" data-cy="hero-searchbar">
+                                <link rel="preload" as="image" type="image/svg+xml" href="https://www.puppyspot.com/preact/./img/dots-loader.svg"/>
+                                
+                                <div className="style-module__content--UlhVY style-module__noBorder--b9CgM style-module__content--home-hero--VItrJ">
+                                    <div className="style-module__reducerWrapper--UVMF-">
+                                        <div className="style-module__reducer--higDU">
+                                            <form autoComplete="off" className="style-module__controlWrapper--Cak4k" action=".">
+                                                <input 
+                                                    id="input_SearchBox_homepage" 
+                                                    placeholder="Search by breed" 
+                                                    autoComplete="off" 
+                                                    value=""
+                                                    type="search"
+                                                    name="search"
+                                                    className="style-module__input--8Dj0T"
+                                                    onChange={(e)=> handleSearch(e)}
+                                                    onFocus={() => setIsFocused(true)}
+                                                    onBlur={() => setIsFocused(false)}
+                                                />
+                                            </form>
+                                        </div>
                                     </div>
+                                    
+                                    <button className="style-module__button--uk1Kx " data-cy="submit-button">
+                                        <i className="style-module__searchIcon--De0gi "></i>
+                                    </button>
                                 </div>
-
-                                <button className="style-module__button--uk1Kx" data-cy="submit-button">
-                                <i className="style-module__searchIcon--De0gi"></i>
-                                </button>
-
-                            </div>
                                 {/* DropDown */}
                                 <div data-cy="filter-results" className={`style-module__menu--Xf2XU  ${isFocused ? '' : 'hidden'}`}>
                                     {
@@ -155,13 +169,30 @@ const HomeContainer: React.FC<Props> = ({}) => {
                                 </div>
                             </div>
                         </div>
+
                     </div>
 
 
                 </div>
+
+                <div className="w-full flex items-center justify-center  h-[65px] overflow-hidden bg-transparent pb-4 relative track_trustpilot">
+                    <div className="trustpilot-module__wrapper--rTgiM">
+                        <a className="trustpilot-module__linkDiv--sTp39 470small" href="https://www.trustpilot.com/review/puppyspot.com" target="_blank" rel="noreferrer">
+                        <div className="trustpilot-module__item--GouFp flex">
+                            <img className="h-8 trustpilot-module__trustImage--JcJz0" src="https://www.puppyspot.com/preact/./img/trustpilot-white.svg" height="35" />
+                        </div>
+                        <div className="trustpilot-module__item--GouFp flex trustpilot-module__starsImage--7b3Fe">
+                            <img className="h-8 trustpilot-module__starsImage--7b3Fe" src="https://www.puppyspot.com/preact/./img/stars-4.5.svg" height="35" />
+                        </div>
+                        <span className="trustpilot-module__item--GouFp font-nunito text-white"><b>5,500+</b> reviews</span>
+                        </a>
+                    </div>
+                </div>
             </div>
 
-            <div className="w-full flex items-center justify-center bg-white h-[65px] overflow-hidden track_trustpilot">
+
+
+            {/* <div className="w-full flex items-center justify-center bg-white h-[65px] overflow-hidden track_trustpilot">
                 <div className="trustpilot-module__wrapper--rTgiM">
                     <a className="trustpilot-module__linkDiv--sTp39 470small" href="https://www.trustpilot.com/review/puppyspot.com" target="_blank" rel="noreferrer">
                         <div className="trustpilot-module__item--GouFp flex"><img className="h-8 trustpilot-module__trustImage--JcJz0" src="/img/trustpilot.svg" height="35" /></div>
@@ -169,15 +200,16 @@ const HomeContainer: React.FC<Props> = ({}) => {
                         <span className="trustpilot-module__item--GouFp font-nunito">4,700+ reviews</span>
                     </a>
                 </div>
-            </div>
+            </div> */}
         </div>
 {/* Spotted By Section */}
         <div id="root-spotted-by">
             <div className="root-spotted-by-inner">
                 <div className="root-spotted-by-inner-inner">
-                    <div className="spotted-by-text-part">
+                    {/* <div className="spotted-by-text-part">
                         <span className="">SPOTTED<br />BY</span>
-                    </div>
+                    </div> */}
+                    <span className="hidden md:block text-[#828282]">As seen on</span>
                     <div className="spotted-by-image-part">
                         <div className="sportted-by-image-part-inner">
                             <img

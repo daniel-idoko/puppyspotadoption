@@ -18,11 +18,11 @@ function TopBanner() {
     <div id='sales-banner_green' className="sales-banner green">
       {showFirstLink ? (
         <a href={navbar.PHONE_WHATSAPP} className="phone">
-          Call our Puppy Concierges: 8AM-Midnight
+          Contact our Puppy Concierges: 8AM-Midnight
         </a>
       ) : (
         <a href={navbar.PHONE_WHATSAPP} className="phone">
-          Call our Puppy Concierges: 8AM-Midnight
+          Contact our Puppy Concierges: 8AM-Midnight
         </a>
       )}
     </div>
