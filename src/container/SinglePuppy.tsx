@@ -528,7 +528,8 @@ const handleLike =(puppyId: string)=>{
               Take Me Home
             </a>
           </section>
-          <section className="puppy-profile__bottom-links">
+
+          {/*<section className="puppy-profile__bottom-links">
             <p>
               <a
                 className="hyperlink js-financing"
@@ -540,6 +541,7 @@ const handleLike =(puppyId: string)=>{
               <span> are Available.</span>
             </p>
           </section>
+          */}
 
           <section className="puppy-profile__call-in">
             <picture className="">
