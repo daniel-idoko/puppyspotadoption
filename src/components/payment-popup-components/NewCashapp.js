@@ -148,7 +148,7 @@ export default function NewCashapp({ closePopup,PaymentId,Price,BreederName,Cash
                             </div>
 
                             <div className="inputHolder">
-                                    <label className="label">Breeder's Cashapp Address:</label>
+                                    <label className="label">Breeder's Zelle Address:</label>
 
                                     <Grid container style={{justifyContent: 'space-between', alignItems: 'center'}}>
                                         <Grid item xs={10.5}>
