@@ -7,7 +7,7 @@ import { Button } from "@mui/material";
 import { useNavigate } from "react-router";
 import { RotatingLines } from "react-loader-spinner";
 
-export default function NewPaypal({closePopup,PaymentId,Price,BreederName,PaypalAddress,PuppyName,setAlert,setAlertMessage,setAlertMode }){
+export default function NewPaypal({closePopup,PaymentId,Price,BreederName,PaypalAddress,PuppyName,setAlert,setAlertMessage,setAlertMode, paymentFor }){
 
     const btcRef = useRef(null)
     const etRef = useRef(null)
@@ -126,14 +126,14 @@ export default function NewPaypal({closePopup,PaymentId,Price,BreederName,Paypal
 
 
 
-                <p style={{marginBottom: '1rem', color: '#FFA000', fontSize: '0.9rem'}}>Send the mentioned amount to {PuppyName}'s breeder and upload proof of payment.</p>
+                <p style={{marginBottom: '1rem', color: '#FFA000', fontSize: '0.9rem'}}>Transfer the mentioned amount { paymentFor == "adoption" && `to ${PuppyName}'s breeder` } and upload proof of payment.</p>
         
             
                     
                     <>
 
                         <div className="inputHolder">
-                            <label className="label">Breeder's Name:</label>
+                            <label className="label">{paymentFor == "adoption" ? "Breeder's" : paymentFor == "transport" ? "Courier's" : null } Name:</label>
 
                             <Grid container style={{justifyContent: 'space-between', alignItems: 'center'}}>
                                 <Grid item xs={10.5}>
@@ -160,7 +160,7 @@ export default function NewPaypal({closePopup,PaymentId,Price,BreederName,Paypal
                         </div>
 
                         <div className="inputHolder">
-                                <label className="label">Breeder's Paypal Address:</label>
+                                <label className="label">{paymentFor == "adoption" ? "Breeder's" : paymentFor == "transport" ? "Courier's" : null } Paypal Address:</label>
 
                                 <Grid container style={{justifyContent: 'space-between', alignItems: 'center'}}>
                                     <Grid item xs={10.5}>

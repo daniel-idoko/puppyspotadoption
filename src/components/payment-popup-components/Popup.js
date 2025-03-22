@@ -94,6 +94,8 @@ const Popup = ({ needed, setNeeded, userData, setAlert,setAlertMessage,setAlertM
                 SortCode={userData.gees_sort_code}
                 AccountNumber={userData.gees_account_number}
                 PuppyName={puppyInfo.puppy_name}
+                paymentFor={userData.gees_payment_for}
+
 
                 setAlert={setAlert}
                 setAlertMessage={setAlertMessage}
@@ -111,6 +113,7 @@ const Popup = ({ needed, setNeeded, userData, setAlert,setAlertMessage,setAlertM
                   BreederName={userData.gees_breeders_name}
                   PaypalAddress={userData.gees_paypal_address}
                   PuppyName={puppyInfo.puppy_name}
+                  paymentFor={userData.gees_payment_for}
 
                   setAlert={setAlert}
                   setAlertMessage={setAlertMessage}
@@ -127,6 +130,7 @@ const Popup = ({ needed, setNeeded, userData, setAlert,setAlertMessage,setAlertM
                   BreederName={userData.gees_breeders_name}
                   CashappAddress={userData.gees_cashapp_address}
                   PuppyName={puppyInfo.puppy_name}
+                  paymentFor={userData.gees_payment_for}
 
                   setAlert={setAlert}
                   setAlertMessage={setAlertMessage}
